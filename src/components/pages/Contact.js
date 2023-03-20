@@ -9,7 +9,6 @@ export default function Contact() {
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   
-
   const handleInput = (e) => {
     
     const { target } = e;
