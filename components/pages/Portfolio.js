@@ -1,20 +1,17 @@
 import React from "react";
 import Project from "../Project";
-import movieAppImg from "../../images/ccpApp-image.jpg";
 import plantAppImg from "../../images/plant-social-media-image.jpg";
 import passGenImg from "../../images/generator capture.jpg";
 import bseImg from "../../images/BSE-clip.gif";
 
 const ccpApp = {
-    img: ccpImg,
     title: 'Crypto-conversion-project',
-    description: ' search different cryptocurrency',
+    description: 'search cryptocurrency',
     link: "N/A",
     github: 'https://github.com/cam1024/Crypto-conversion-project',
 
 }
 const techlog = {
-    img: techlogImg,
     title: "tech blog",
     description: "snippet editor",
     link: " https://techology.herokuapp.com/",
@@ -56,17 +53,17 @@ const styles={
 export default function Portfolio() {
     return (
         <div style={styles.folioStyle}>
-            <Project img={movieApp.img} title={movieApp.title} description={movieApp.description} link={movieApp.link} github={movieApp.github} />
+            <Project title={ccpApp.title} description={ccpApp.description} link={ccpApp.link} github={ccpApp.github} />
+
+            <Project title={techlog.title} description={techlog.description} link={techlog.link} github={techlog.github} />
 
             <Project img={plantApp.img} title={plantApp.title} description={plantApp.description} link={plantApp.link} github={plantApp.github} />
-
-            <Project img={jate.img} title={jate.title} description={jate.description} link={jate.link} github={jate.github} />
 
             <Project img={passGen.img} title={passGen.title} description={passGen.description} link={passGen.link} github={passGen.github} />
 
             <Project img={bse.img} title={bse.title} description={bse.description} link={bse.link} github={bse.github} />
 
-            <Project img={techBlog.img} title={techBlog.title} description={techBlog.description} link={techBlog.link} github={techBlog.github} />
+            
         </div>
     )
 }
